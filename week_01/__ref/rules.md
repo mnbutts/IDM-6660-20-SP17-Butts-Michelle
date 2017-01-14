@@ -4,7 +4,7 @@
 ### Submission
 
 Once you have finished your code, please push a commit to your repo with the following title:
-`Week One Assignment - FINAL`.
+`Week 1 Assignment - FINAL`.
 
 ### Here are the rules for this assignment:
 
