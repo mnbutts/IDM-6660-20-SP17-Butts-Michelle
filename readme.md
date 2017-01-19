@@ -22,3 +22,4 @@ Steps for usage in class:
 
 ## TEST FOR GIT SET UP
 ## Second test for MCAD account
+## Third test for Personal Account
