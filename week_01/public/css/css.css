@@ -1,9 +1,9 @@
 /* YOUR CSS GOES HERE */
 body {
-	width: 650;
+	width: 640;
 	padding: 20px 60px;
 	font-size: 18px;
-	
+	color: #111;
 }
 h1,
 h2,
@@ -19,4 +19,18 @@ h2 {
 }
 h3 {
 	font-size: 20px;
+}
+img {
+	width: 100%;
+}
+blockquote {
+	background-color: #dddddd; 
+	width: 100%;
+	margin: 0;
+	line-height: 1.4em;
+	padding: 10px 10px 20px 10px;
+}
+a:link, 
+a:visited {
+	color: #0074d9;
 }
