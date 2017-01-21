@@ -1,1 +1,22 @@
 /* YOUR CSS GOES HERE */
+body {
+	width: 650;
+	padding: 20px 60px;
+	font-size: 18px;
+	
+}
+h1,
+h2,
+h3 {
+	font-family: arial, sans-serif;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+}
+h2 {
+	font-size: 25px;
+}
+h3 {
+	font-size: 20px;
+}
