@@ -1,9 +1,10 @@
 /* YOUR CSS GOES HERE */
 body {
-	width: 640;
+	width: 640px;
 	padding: 20px 60px;
 	font-size: 18px;
 	color: #111;
+	margin: 0 auto;
 }
 h1,
 h2,
@@ -29,7 +30,6 @@ blockquote {
 	margin: 0;
 	line-height: 1.4em;
 	padding: 5px 0px 10px 5px;
-
 }
 a:link, 
 a:visited {
