@@ -106,3 +106,21 @@ article p:hover:after {
 footer {
     margin-bottom: 3rem;
 }
+
+@media screen and (max-width: 480px) {
+    article p:after {
+        visibility: hidden;
+    }
+    article p span {
+        display: inline-block;
+    }
+    header {
+        width: 100%;
+    }
+    body {
+        padding: 0 10px;
+    }
+    body>*  {
+        width: 100%;
+    } 
+}
