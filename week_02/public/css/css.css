@@ -107,7 +107,7 @@ footer {
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
     article p:after {
         visibility: hidden;
     }
@@ -117,10 +117,50 @@ footer {
     header {
         width: 100%;
     }
-    body {
-        padding: 0 10px;
-    }
     body>*  {
         width: 100%;
+    }
+}
+@media screen and (min-width: 720px) {
+    img.cover-img {
+        width: 50%;
+        text-align: left;
+    }
+    article h1,
+    article h2,
+    article p {
+        width: 50%;
+        float: right;
+        clear: both;
+        padding-left: 20px;
+    }
+@media screen and (min-width: 1080px) {
+    html {
+        background-color: #FF851B;
+
+    }
+    article h1,
+    article h2,
+    article p span {
+        display: none;
+    }
+    header {
+        width: 33.33%;
+        float: left;
+    }
+    main {
+        width: 66.66%;
+        float: right;
     } 
+    article {
+        width: 50%;
+        float: right;
+    }
+    img.cover-img {
+        margin: 0;
+        padding-top: 20px;
+    }
+    footer {
+        float: left;
+    }
 }
