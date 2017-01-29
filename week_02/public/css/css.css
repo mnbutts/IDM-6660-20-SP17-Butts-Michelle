@@ -124,20 +124,18 @@ footer {
 @media screen and (min-width: 720px) {
     img.cover-img {
         width: 50%;
-        text-align: left;
+        float: left;
     }
     article h1,
     article h2,
-    article p {
-        width: 50%;
+    article p span {
+        width: 50%;	
         float: right;
-        clear: both;
-        padding-left: 20px;
     }
+ 
 @media screen and (min-width: 1080px) {
     html {
         background-color: #FF851B;
-
     }
     article h1,
     article h2,
@@ -164,3 +162,17 @@ footer {
         float: left;
     }
 }
+@media screen and (min-width: 1280px) {
+    header {
+        width: 25%;
+        float: left;
+    }
+    main {
+        width: 75%;
+        float: right;
+    }
+    article {
+        width: 25%;
+    }
+}
+
