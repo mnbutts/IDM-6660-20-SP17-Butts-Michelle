@@ -1,0 +1,38 @@
+html {
+	font-size: 18px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+body>* {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+button.accordion {
+	background-color: #4D6C8E;
+	color: #fff;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	transition: 0.3s;
+	text-align: left;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+div.panel {
+    padding: 0 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
