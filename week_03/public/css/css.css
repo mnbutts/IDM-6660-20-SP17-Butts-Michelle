@@ -1,5 +1,5 @@
 html {
-	font-size: 18px;
+	font-size: 16px;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -9,31 +9,37 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
+body {
+	line-height: 1.3em;
+	font-family: Arial;
+}
 body>* {
     display: block;
     width: 300px;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 header {
-	height: 65px;
+	height: 4.0625em;
+	position: relative;
+	height: 100px;
 }
 header img {
-	float: left;
-	width: 65%;
+	height: 100%;
 }
 .hospital_location {
-	float: right;
-	width: 35%;
+	bottom: 0px;
+	right: 0px;
 	text-align: right;
-	padding-top: 35px;
+	position: absolute;
+	font-size: 0.625em; /*10px*/
+	color: #4D6C8E;
 }
-
 .heading {
 	background-color: #4D6C8E;
 	color: #fff;
 	height: 50px;
-	position: relative;
-	margin-top: 10px;
+	position: relative;	
 }
 .hamburger {
   display: block;
@@ -46,12 +52,12 @@ header img {
 }
 .hamburger button {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   border: 0;
   text-indent: 200%;
   overflow: hidden;
-  background: rgba(255,255,255, 0.9) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+  background: #4D6C8E url("http://alexandstein.com/resources/images/icons/hamburger.png") center no-repeat;
   border: 1px solid #ddd;
   border-radius: 3px;
   background-size: 80%;
@@ -85,11 +91,25 @@ a:focus {
   background: #e7e7e7;
 }
 h1 {
-	font-size: 22px;
+	font-size: 1.375em; /*22px*/
 	margin: 0;
 	position: absolute;
-	bottom: 0px;
-	width: 60%;
+	top: 15px;
+	padding-left: 15px;
+}
+h2 {
+	font-size: 1.25em; /*20px*/
+	padding-top: 10px;
+	text-align: right;
+}
+.tagline {
+	padding-bottom: 10px;
+	text-align: right;
+}
+h3 {
+	font-size: 1em; /*17px*/
+	text-align: left;
+	text-transform: uppercase;
 }
 button.accordion {
 	background-color: #4D6C8E;
