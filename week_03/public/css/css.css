@@ -38,7 +38,7 @@ header img {
 .heading {
 	background-color: #4D6C8E;
 	color: #fff;
-	height: 50px;
+	height: 40px;
 	position: relative;	
 }
 .hamburger {
@@ -52,17 +52,17 @@ header img {
 }
 .hamburger button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
   border: 0;
   text-indent: 200%;
   overflow: hidden;
-  background: #4D6C8E url("http://alexandstein.com/resources/images/icons/hamburger.png") center no-repeat;
-  border: 1px solid #ddd;
+  background: url("http://alexandstein.com/resources/images/icons/hamburger.png") center no-repeat;
+  border: none;
   border-radius: 3px;
   background-size: 80%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   outline: none;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
@@ -77,12 +77,12 @@ a {
   display: block;
 }
 a {
-  background: #eee;
+  background: #4D6C8E;
   text-align: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd;
+  padding: 20px 5px;
+  border-bottom: 1px solid #eee;
   text-decoration: none;
-  color: #222;
+  color: #fff;
   font-weight: bold;
 }
 a:hover,
@@ -90,12 +90,16 @@ a:active,
 a:focus {
   background: #e7e7e7;
 }
+h2,
+h3,
+.tagline {
+	color: #4A6688;
+}
 h1 {
 	font-size: 1.375em; /*22px*/
 	margin: 0;
 	position: absolute;
-	top: 15px;
-	padding-left: 15px;
+	bottom: 0;
 }
 h2 {
 	font-size: 1.25em; /*20px*/
@@ -122,6 +126,7 @@ button.accordion {
 	outline: none;
 	transition: 0.3s;
 	text-align: left;
+	text-transform: uppercase;
 }
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
