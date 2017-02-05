@@ -14,6 +14,68 @@ body>* {
     width: 300px;
     margin: 0 auto;
 }
+.heading {
+	background-color: #4D6C8E;
+	color: #fff;
+	height: 50px;
+	position: relative;
+}
+.hamburger {
+  display: block;
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+.hamburger div {
+  display: none;
+}
+.hamburger button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: rgba(255,255,255, 0.9) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.hamburger button.expanded {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+a {
+  display: block;
+}
+a {
+  background: #eee;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+a:hover,
+a:active,
+a:focus {
+  background: #e7e7e7;
+}
+h1 {
+	font-size: 22px;
+	margin: 0;
+	position: absolute;
+	bottom: 0px;
+	width: 60%;
+}
 button.accordion {
 	background-color: #4D6C8E;
 	color: #fff;
@@ -36,3 +98,5 @@ div.panel {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+/*Hamburger reference: https://codepen.io/corysimmons/pen/KbFcg*/
+/*Accordion reference: http://www.w3schools.com/howto/howto_js_accordion.asp*/

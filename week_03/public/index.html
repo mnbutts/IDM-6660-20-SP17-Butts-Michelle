@@ -4,29 +4,33 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/css.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 	<header>
 	<img src="http://www.boulevardanimal.com/images/boulevard-animal-hospital-logo.png" alt="logo">
 	<div class="hospital_location">North Hills</div>
 	</header>
-	<heading>
+	<heading class="heading">
 		<h1>Boarding Services</h1>
-		<div id="subnavigation">
-			<ul>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="surgery-and-orthopedics.html">Surgery and Orthopedics</a></li>
-				<li><a href="spay-and-neuter-cats.html">Spay and Neuter - Cats</a></li>
-				<li><a href="spay-and-neuter-dogs.html">Spay and Neuter - Dogs</a></li>
-				<li><a href="comprehensive-dentistry.html">Comprehensive Dentistry</a></li>
-				<li><a href="on-site-diagnostics.html">On-Site Diagnostics</a></li>
-				<li><a href="pharmeceuticals-and-diets.html">Pharmaceuticals, Diets, and Pet Supplies</a></li>
-				<li><a href="indoor-outdoor-boarding.html">Indoor/Outdoor Boarding &amp; Daycare</a></li>
-				<li class="lastitem"><a href="groomer.html">Grooming</a></li>
-			</ul>
-		</div>
+		
+		<nav class="hamburger">
+			<button>Toggle</button>
+				<div>
+				   <a href="services.html">Services</a>
+					<a href="surgery-and-orthopedics.html">Surgery and Orthopedics</a>
+					<a href="spay-and-neuter-cats.html">Spay and Neuter - Cats</a>
+					<a href="spay-and-neuter-dogs.html">Spay and Neuter - Dogs</a>
+					<a href="comprehensive-dentistry.html">Comprehensive Dentistry</a>
+					<a href="on-site-diagnostics.html">On-Site Diagnostics</a>
+					<a href="pharmeceuticals-and-diets.html">Pharmaceuticals, Diets, and Pet Supplies</a>
+					<a href="indoor-outdoor-boarding.html">Indoor/Outdoor Boarding &amp; Daycare</a>
+					<a href="groomer.html">Grooming</a>
+  				</div>
+		</nav>
 	</heading>
-
+	<h2>Cat &amp; Dog Boarding</h2>
+	<p>Old Fashioned Card</p>
 	<img src="http://www.boulevardanimal.com/images/dog-boarding.jpg" alt="photo of dog enjoying outdoors">
 	<section>
 		<div>
@@ -115,21 +119,21 @@
 			</div>
 	</section>
 <footer>
+	<script src="js/script.js"></script>
 	<script>
 		var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-  	  panel.style.maxHeight = null;
-    } else {
-  	  panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
-}
+		var i;
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].onclick = function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight){
+		  	  panel.style.maxHeight = null;
+		    } else {
+		  	  panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  }
+		}
 	</script>
 </footer>
 </body>
