@@ -14,11 +14,26 @@ body>* {
     width: 300px;
     margin: 0 auto;
 }
+header {
+	height: 65px;
+}
+header img {
+	float: left;
+	width: 65%;
+}
+.hospital_location {
+	float: right;
+	width: 35%;
+	text-align: right;
+	padding-top: 35px;
+}
+
 .heading {
 	background-color: #4D6C8E;
 	color: #fff;
 	height: 50px;
 	position: relative;
+	margin-top: 10px;
 }
 .hamburger {
   display: block;
