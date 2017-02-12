@@ -1,0 +1,13 @@
+All of these changes were made after giving thought to the feedback from this week. 
+Body Width -to allow more use of the screen
+Read More Content - to allow users the ability to decided on whether or not they want to read all of the content or take action. 
+Header Html -reduce the duplication in header text. If this was a fully functioning site, the header would read the selected menu page. For instance, if the user was on Surgery and Orthopedics it would read 'surgery and orthopedics'
+Img Placement - i moved the image to sort of break up the text and add distance between the page header and the menu name. 
+CSS code alignment -i cleaned up my code alignment for easy readability
+H3 font color - wanted the sections to stand out more 
+Heading tag removed and repalced with a div
+
+I did not make any changes to the form, I've only copied and pasted what was on the original website. The form on the website has these same issues. 
+
+
+I decided not to center the page header because I still prefer it over to the right. I feel that it helps to break up the reading by it being over to the right, i could be wrong. 

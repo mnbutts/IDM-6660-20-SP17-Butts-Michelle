@@ -1,0 +1,157 @@
+html {
+	font-size: 16px;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+	line-height: 1.3em;
+	font-family: Arial;
+}
+body>* {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+header {
+	height: 4.0625em;
+	position: relative;
+	height: 100px;
+}
+header img {
+	height: 100%;
+}
+.hospital_location {
+	bottom: 0px;
+	right: 10px;
+	text-align: right;
+	position: absolute;
+	font-size: 0.625em; /*10px*/
+	color: #4D6C8E;
+}
+.heading {
+	background-color: #4D6C8E;
+	color: #fff;
+	height: 50px;
+	position: relative;	
+}
+.hamburger {
+  display: block;
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+.hamburger div {
+  display: none;
+}
+.hamburger button {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: url("http://alexandstein.com/resources/images/icons/hamburger.png") center no-repeat;
+  border: none;
+  border-radius: 3px;
+  background-size: 80%;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.hamburger button.expanded {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+a {
+  display: block;
+}
+a {
+  background: #4D6C8E;
+  text-align: center;
+  padding: 20px 5px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+a:hover,
+a:active,
+a:focus {
+  background: #e7e7e7;
+}
+h2,
+.tagline {
+	color: #4A6688;
+}
+h1 {
+	font-size: 1.375em; /*22px*/
+	margin: 0;
+	position: absolute;
+	bottom: 5px;
+}
+h2 {
+	font-size: 1.25em; /*20px*/
+	padding-top: 10px;
+	text-align: right;
+}
+.tagline {
+	padding-bottom: 10px;
+	text-align: right;
+}
+h3 {
+	font-size: 1em; /*17px*/
+	text-align: left;
+	text-transform: uppercase;
+  color: #8AA238;
+}
+.jumbo_image {
+  margin-top: 10px;
+}
+button.accordion {
+	background-color: #4D6C8E;
+	color: #fff;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	transition: 0.3s;
+	text-align: left;
+	text-transform: uppercase;
+}
+button.accordion.read_more {
+  background-color: #fff;
+  color: #4D6C8E;
+  padding-top: 0;
+  text-align: right;
+}
+button.accordion.read_more.active, button.accordion.read_more:hover {
+  background-color: #fff;
+}
+button.accordion.active, button.accordion:hover {
+  background-color: #ddd;
+}
+div.panel.sub_content {
+  padding: 0;
+}
+div.panel {
+  padding: 0 20px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/*Hamburger reference: https://codepen.io/corysimmons/pen/KbFcg*/
+/*Accordion reference: http://www.w3schools.com/howto/howto_js_accordion.asp*/
