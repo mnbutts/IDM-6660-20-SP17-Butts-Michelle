@@ -1,7 +1,7 @@
 html, *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 html {
 	font-size: 16px;
@@ -17,7 +17,6 @@ body>* {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0px;
-	overflow: auto;
 }
 body {
 	position: relative;
@@ -39,6 +38,7 @@ h1 {
 	bottom: 5px;
 	left: 20px;
 	margin: 0;
+	overflow: auto;
 }
 .hamburger {
 	display: block;
@@ -66,43 +66,43 @@ h1 {
 	transition: all 400ms ease;
 }
 .hamburger button.expanded {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  background-color: transparent;
-  border: 0;
+    -webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	background-color: transparent;
+	border: 0;
 }
 .hamburger a {
-  display: block;
-}
-.hamburger a {
-  background: #000;
-  text-align: center;
-  padding: 20px 5px;
-  border-bottom: 1px solid #fff;
-  text-decoration: none;
-  color: #fff;
+	background: #000;
+	text-align: center;
+	padding: 20px 5px;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+	color: #fff;
+	display: block;
 }
 .hamburger a:hover,
 .hamburger a:active,
 .hamburger a:focus {
-  background: #ee1d77;
+    background: #ee1d77;
 }
 .body_content {
 	height: 100%;
 	position: relative;
+	overflow: auto;
 }
 .jumbotron {
 	background-color: rgba(0, 0, 0, 0.8);
 	color: #fff;
-	padding: 50px 0px 50px 25px;
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 	width: 100%;
-	z-index: -10000;
+	padding: 25px;
+	z-index: -100;
 }
 .social_heading {
 	text-transform: uppercase;
 	color: #ee1d77;
+	margin: 0;
 }
 .jumbotron p {
 	font-family: "Arial", sans-serif;
@@ -111,7 +111,9 @@ h1 {
 .full_nav,
 .site_items, 
 .address, 
-.tagline {
+.tagline,
+.destop_only,
+.desktop_item {
 	display: none;
 }
 button.accordion {
@@ -128,6 +130,7 @@ button.accordion {
 	text-transform: uppercase;
 	font-size: 1.25em; /*20px*/
 	font-family: "Arial Black", Gadget, sans-serif; 
+
 }
 button.accordion:first-child {
 	margin-top: 250px;
@@ -142,7 +145,6 @@ div.panel {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  z-index: 100000000000;
 }
 .panel ul {
 	list-style-type: none;
@@ -178,7 +180,7 @@ footer {
     .tagline,
     .site_items, 
     .full_nav {
-		display: block;
+		display: block !important;
     }
     .desktop_only {
     	display: none;
@@ -197,22 +199,23 @@ footer {
 	}
 	.tagline {
 		position: absolute;
-		right: 0px;
-		top: 250px;
+		right: 0;
+		top: 150px;
 		background-color: rgba(238, 29, 119, 0.8);
 		color: #fff;
-		padding: 10px 50px 10px 25px;
+		padding: 20px 100px 20px 50px;
 		font-size: 0.875em; /*14px*/
+		z-index: 100000;
 	}
 	.tablet_items{ 
 		width: 50%; 
-		height: 250px;
 	}
 	.items {
 		float: left;
 		position: relative;
 		font-size: 0.875em; 
 		white-space: nowrap;
+		height: 250px;
 	}
 	.item_one {
 		background: url(http://www.stdessertbar.com/uploads/3/4/2/0/34203358/5207536_orig.jpeg) no-repeat center;
@@ -240,7 +243,7 @@ footer {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 70%;
+		width: 250px;
 		text-align: center;
 	}
 	.address {
@@ -249,18 +252,15 @@ footer {
 		margin: 0;
 		font-family: "Arial", sans-serif;
 		text-align: center;
-		padding: 35px;
 		font-size: 0.875em; /*14px*/
 		color: #fff;
+		padding: 35px;
 	}
 	h3 {
 		color: #ee1d77;
 	}
 	.address p:last-child {
 		margin-bottom: 0;
-	}
-	.full_nav {
-		width: 70%;
 	}
 	.full_nav ul {
 		list-style-type: none;
@@ -294,9 +294,66 @@ footer {
 	}
 }
 @media only screen and (min-width: 920px) {
-	.desktop_only {
+	h1 {
+		font-size:4.0625em; /*65px*/
+		bottom: 0;
+	}
+	.desktop_item {
 		display: block !important;
 	}
+	.desktop_only {
+		display: inline !important;
+	}
+	.accordion_list {
+		display: none;
+	}
+	.site_items {
+		margin-top: 350px; /*Allows jumbotron to be seen*/
+	}
+	.tagline {
+		top: 150px;
+	}
+	.jumbotron {
+		width: 35%;
+		height: 400px;
+		top: 0;
+    }
+    .social_heading {
+    	font-size: 1.875em;
+    }
+    .social_heading, 
+    .jumbotron p {
+    	padding-bottom: 25px;
+    }
+    .jumbotron div p {
+    	padding-top: 15px;
+    }
+    .jumbotron div {
+		position: absolute;
+		bottom: 100px;
+	}
+    .items {
+    	height: 400px; 
+    	border-top: 50px solid #fff;
+    }
+    .desktop_item {
+  	 	width: 100%;
+    }
+    .item_three {
+		background: url(http://www.stdessertbar.com/uploads/3/4/2/0/34203358/2542570_orig.jpg) no-repeat center;
+	    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	}
+	.item_four {
+		background: url(http://www.stdessertbar.com/uploads/3/4/2/0/34203358/3789995_orig.jpg) no-repeat center;
+	    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	}
+
 }
 
 
