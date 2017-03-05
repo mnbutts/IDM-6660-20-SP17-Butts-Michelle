@@ -4,38 +4,44 @@
 	<title>Sweet Tooth's Dessert Bar and Deli</title>
 	<link rel="stylesheet" type="text/css" href="css/css.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Tangerine:700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 <header>
 	<h1>Sweet Tooth's</h1>
-	<nav>
-		<button>Hamburger Menu</button>
-		<div>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
-		</div>
+	<nav class="hamburger">
+		<button>Toggle</button>
+			<div>
+				<a href="#">Services</a>
+				<a href="#">Shop</a>
+				<a href="#">About Us</a>
+				<a href="#">Gallery</a>
+			</div>
 	</nav>
+		<p class="tagline">It Taste As Good As It Looks</p>
 </header>
+<div class="body_content">
 <section class="accordion_list">
 	<button class="accordion">Menu's</button>
 		<div class="panel">
-			
+			<ul>
+				<li><a href="#">Daily Menu Items</a></li>
+				<li><a href="#">Dessert Menu</a></li>
+				<li><a href="#">Lunch Menu</a></li>
+			</ul>
 		</div>
 	<button class="accordion">Order Online</button>
 		<div class="panel">
-			
+			<ul>
+				<li><a href="#">Cakes</a></li>
+				<li><a href="#">Cupcakes</a></li>
+				<li><a href="#">Pies</a></li>
+			</ul>
 		</div>
 <!-- Will Hide -->
-    <button class="accordion tablet">Order Online</button>
+<!--     <button class="accordion tablet">Order Online</button>
 		<div class="panel">
 			
 		</div>
@@ -50,27 +56,27 @@
     <button class="accordion tablet">Order Online</button>
 		<div class="panel">
 			
-		</div>
+		</div> -->
 <!-- Will Hide Ended -->
 </section>
-<section class="desktop_site_items">
-	<div class="items">
+<section class="site_items">
+	<div class="items tablet_items item_one">
 		<div><a href="#">What's New</a></div>
 	</div>
-	<div class="items">
+	<div class="items tablet_items item_two">
 		<div><a href="#">Daily Menu Items</a></div>
 	</div>
-	<div class="items">
-		<div><a href="#">Schedule Consultation</a></div>
+	<div class="items desktop_site_items item_three">
+		<div class=""><a href="#">Schedule Consultation</a></div>
 	</div>
-	<div class="items">
+	<div class="items desktop_site_items item_four">
 		<div><a href="#">Gallery</a></div>
 	</div>
 </section>
 <div class="jumbotron">
 	<div>
-		<h2>Let's Connect</h2>
-			<p>Keep Up With Sweet Tooth's Lastest</p>
+		<h2 class="social_heading">Let's Connect</h2>
+			<p>Keep Up With Sweet Tooth's Latest</p>
 			<span class="fa-stack fa-1x">
 		  		<i class="fa fa-circle-o fa-stack-2x"></i>
 		  		<i class="fa fa-facebook fa-stack-1x"></i>
@@ -88,9 +94,6 @@
 		  		<i class="fa fa-envelope fa-stack-1x"></i>
 			</span>
 	</div>
-	<div>
-		<p class="tagline">It Taste As Good As It Looks</p>
-	</div>	
 </div>
 <div class="address">
 	<p>335 Nelson St. Atlants, GA 30313</p>
@@ -101,8 +104,26 @@
 	<p>Sun CLOSED</p>
 	<p>Free Wifi</p>	
 </div>
+</div>
+
 <footer>
 	<p> &copy; 2017 Sweet Tooth's. All Rights Reserved.</p>
+	<script src="js/script.js"></script>
+	<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].onclick = function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight){
+			  	  panel.style.maxHeight = null;
+			    } else {
+			  	  panel.style.maxHeight = panel.scrollHeight + "px";
+			    } 
+			  }
+			}
+		</script>
 </footer>
 </body>
 </html>
