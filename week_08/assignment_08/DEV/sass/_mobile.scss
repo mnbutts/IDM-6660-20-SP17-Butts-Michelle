@@ -1,0 +1,174 @@
+html, *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	height: 100%;
+	background: url("http://www.stdessertbar.com/uploads/3/4/2/0/34203358/3109130_orig.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body>* {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+body {
+	position: relative;
+	margin: 0;
+	height: 100%;
+}
+header {
+	background-color: #bdba0b;
+	position: relative;
+	height: 70px;
+	width: 100%;
+	margin: 0;
+}
+h1 {
+	font-family: 'Tangerine', cursive;
+	font-size: 2.8125em; /*45px*/
+	padding: 0;
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+	margin: 0;
+	overflow: auto;
+}
+.hamburger {
+	display: block;
+	width: 100%;
+	top: 0;
+}
+.hamburger div {
+	display: none;
+	padding-top: 60px;
+}
+.hamburger button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	text-indent: 200%;
+	overflow: hidden;
+	background: url("https://cdn4.iconfinder.com/data/icons/iconado-1/100/menu-512.png") center no-repeat;
+	border: none;
+	border-radius: 3px;
+	background-size: 80%;
+	width: 30px;
+	height: 30px;
+	outline: none;
+	-webkit-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+.hamburger button.expanded {
+    -webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	background-color: transparent;
+	border: 0;
+}
+.hamburger a {
+	background: #000;
+	text-align: center;
+	padding: 20px 5px;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+.hamburger a:hover,
+.hamburger a:active,
+.hamburger a:focus {
+    background: #ee1d77;
+}
+.body_content {
+	height: 100%;
+	position: relative;
+	overflow: auto;
+}
+.jumbotron {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 25px;
+	z-index: -100;
+}
+.social_heading {
+	text-transform: uppercase;
+	color: #ee1d77;
+	margin: 0;
+}
+.jumbotron p {
+	font-family: "Arial", sans-serif;
+}
+.tablet,
+.full_nav,
+.site_items, 
+.address, 
+.tagline,
+.destop_only,
+.desktop_item {
+	display: none;
+}
+button.accordion {
+	background-color: #bdba0b;
+	color: #fff;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	transition: 0.3s;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 1.25em; /*20px*/
+	font-family: "Arial Black", Gadget, sans-serif; 
+
+}
+button.accordion:first-child {
+	margin-top: 250px;
+}
+button.accordion.active, button.accordion:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+div.panel {
+  padding: 0 20px;
+  background-color: #fff;
+  color: #ee1d77;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel ul {
+	list-style-type: none;
+}
+.panel a {
+	text-decoration: none;
+}
+.panel a:link,
+.panel a:visited {
+	color: #000;
+}
+.panel a:hover {
+	color: #ee1d77;
+}
+footer p {
+	margin: 0;
+	padding: 20px;
+}
+footer {
+	background-color: #bdba0b;
+	font-size: 0.625em; /*10px*/
+	font-family: "Arial", sans-serif;
+	text-align: right;
+}
+.clear {
+	clear: both;
+}

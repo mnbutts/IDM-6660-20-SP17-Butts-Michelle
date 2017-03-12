@@ -1,0 +1,121 @@
+@media only screen and (min-width: 768px) { 
+    h1 {
+    	font-size: 3.4375em; /*55px*/
+    }
+    .address, 
+    .tagline,
+    .site_items, 
+    .full_nav {
+		display: block !important;
+    }
+    .desktop_only {
+    	display: none;
+    }
+    .hamburger {
+    	visibility: hidden;
+    }
+    .jumbotron {
+		position: absolute;
+		top: 0px;
+		left: 50px;
+		width: 250px;
+		z-index: -10000;
+		height: 300px;
+		padding: 25px 0px 50px 25px;
+	}
+	.tagline {
+		position: absolute;
+		right: 0;
+		top: 150px;
+		background-color: rgba(238, 29, 119, 0.8);
+		color: #fff;
+		padding: 20px 100px 20px 50px;
+		font-size: 0.875em; /*14px*/
+		z-index: 100000;
+	}
+	.tablet_items{ 
+		width: 50%; 
+	}
+	.items {
+		float: left;
+		position: relative;
+		font-size: 0.875em; 
+		white-space: nowrap;
+		height: 250px;
+	}
+	.item_one {
+		background: url(http://www.stdessertbar.com/uploads/3/4/2/0/34203358/5207536_orig.jpeg) no-repeat center;
+	    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	}
+	.item_two {
+		background: url(http://www.stdessertbar.com/uploads/3/4/2/0/34203358/6159767_orig.jpg) no-repeat center;
+	    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	}
+	.items a {
+		text-decoration: none;
+		color: #ee1d77;
+		text-transform: uppercase;
+	}
+	.items div {
+		background-color: rgba(0, 0, 0, 0.9);
+		padding: 30px 0px 30px 0px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 250px;
+		text-align: center;
+	}
+	.address {
+		clear: both;
+		background-image: url("../images/stressed_linen.png");
+		margin: 0;
+		font-family: "Arial", sans-serif;
+		text-align: center;
+		font-size: 0.875em; /*14px*/
+		color: #fff;
+		padding: 35px;
+	}
+	h3 {
+		color: #ee1d77;
+	}
+	.address p:last-child {
+		margin-bottom: 0;
+	}
+	.full_nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+	}
+	.full_nav li {
+		display: inline;
+		padding-left: 15px;
+	}
+	.desktop_only {
+		display: none !important;
+	}
+	.full_nav li a,
+	.address a {
+		text-decoration: none;
+	}
+	.full_nav a:link,
+	.full_nav a:visited {
+		color: #000;
+	}
+	.full_nav a:hover {
+		color: #ee1d77;
+	}
+	.address a:link,
+	.address a:visited {
+		color: #fff;
+	}
+}
