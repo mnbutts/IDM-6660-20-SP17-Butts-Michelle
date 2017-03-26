@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1020px) {
+		header {
+			border: none;
+			letter-spacing: normal;
+		}
+		h1 {
+			font-size: 900%;
+			border: none;
+		}
+		header p {
+			left: 0;
+			font-size: 100%;
+		}
+		.desktop_side {
+			display: inline-flex;
+			width: 100%;
+			background-color: #618685;
+			height: 50px;
+		}
+		section {
+			width: 80%;
+			float: right;
+		}
+}

@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+	header {
+		text-align: left;
+		overflow: auto;
+		/*border: none;*/
+		position: relative;
+	}
+	h1 {
+		border-right: 5px dotted #36486b;
+		width: 40%;
+		letter-spacing: 10px;
+		padding-left: 10px;
+	}
+	h1,
+	header p {
+		float: left;
+	}
+	header p {
+		position: absolute;
+		bottom: 0;
+		right: 340px;
+		font-size: 90%;
+	}
+	section {
+		clear: both;
+		width: 80%;
+		font-size: 130%;
+		line-height: 40px;
+		float: right;
+		overflow: auto;
+		font-size: 150%;
+	}
+	footer {
+		clear: both;
+	}
+}
