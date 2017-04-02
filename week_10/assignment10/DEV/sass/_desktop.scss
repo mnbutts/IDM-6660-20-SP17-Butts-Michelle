@@ -1,0 +1,35 @@
+@media screen and (min-width: 480px) {
+  body {
+    margin: 50px auto;
+    padding: 0 50px;
+  }
+  .dropdown {
+
+    ul {
+      max-height: none;
+      overflow: visible;
+      text-align: center;
+      margin: 25px 0;
+    }
+    .menu-controller-label {
+      display: none;
+      visibility: none;
+    }
+    ul {
+      a {
+        display: inline;
+        color: $olive;
+        font-size: $header3-font-size;
+      }
+      li {
+        background-color: transparent;
+        display: inline-block;
+        padding-left: 10px;
+      }
+    }
+    h1 {
+      font-size: $header1-font-size * 1.5;
+    }
+    
+  }
+}
